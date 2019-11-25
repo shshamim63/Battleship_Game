@@ -1,0 +1,24 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shshamim63/Battleship_Game.git"
+  },
+  "author": "Shakhawat Hossain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shshamim63/Battleship_Game/issues"
+  },
+  "homepage": "https://github.com/shshamim63/Battleship_Game#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
