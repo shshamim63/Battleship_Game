@@ -12,4 +12,7 @@ describe('Ship', () => {
     ship.hit(2);
     expect(ship.isSunk()).toBe(true);
   });
+  test('returns an updated array if grid gets hit', () => {
+    expect(ship.shipPosition).toEqual(['X', 'X', 'X']);
+  });
 });
