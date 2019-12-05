@@ -20,7 +20,7 @@ const Gameboard = () => {
   };
   const defineRow = (position) => Math.floor(position / boardRow);
   const containsVerticalEdge = (start, current) => !(defineRow(start) === defineRow(current));
-  
+  const containsHorizontalEdge = (position) => board[position] === undefined;
   const positionIsvalid = (randomPosition, len, isVertical) => {
     for (let i = 0; i < len; i + 1) {
       if (hasShip(randomPosition + positionFactor(isVertical, i))
