@@ -18,9 +18,19 @@ const Gameboard = () => {
       };
     });
   };
-  // const positionIsvalid = () => {
+  const defineRow = (position) => Math.floor(position / boardRow);
 
-  // };
+  const positionIsvalid = (randomPosition, len, isVertical) => {
+    for (let i = 0; i < len; i + 1) {
+      if (hasShip(randomPosition + positionFactor(isVertical, i))
+      || containsVerticalEdge(randomPosition, randomPosition + positionFactor(isVertical, i))
+      || containsHorizontalEdge(randomPosition + positionFactor(isVertical, i))
+      ) {
+        return false;
+      }
+    }
+    return true;
+  };
   const placeShips = (shipDiversity) => {
     shipDiversity.forEach((element) => {
       const isVertical = shipOrientation();
