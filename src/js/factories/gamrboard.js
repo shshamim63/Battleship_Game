@@ -19,6 +19,7 @@ const Gameboard = () => {
     });
   };
   const defineRow = (position) => Math.floor(position / boardRow);
+  const hasShip = (position) => typeof board[position] === 'object';
   const containsVerticalEdge = (start, current) => !(defineRow(start) === defineRow(current));
   const containsHorizontalEdge = (position) => board[position] === undefined;
   const positionIsvalid = (randomPosition, len, isVertical) => {
