@@ -26,4 +26,14 @@ describe('Gameboard', () => {
     gameboard.receiveAttack(0, 5);
     expect(gameboard.board[5]).toBe('X');
   });
+  test('checks if  all of their ships have been sunk', () => {
+    gameboard.placeShips([4, 3, 2]);
+    expect(gameboard.AllShipsHaveSunk()).toBe(false);
+    for (let i = 0; i < gameboard.boardRow; i += 1) {
+      for (let j = 0; j < gameboard.boardRow; j += 1) {
+        gameboard.receiveAttack(i, j);
+      }
+    }
+    expect(gameboard.AllShipsHaveSunk()).toBe(true);
+  });
 });

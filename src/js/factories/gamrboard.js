@@ -50,6 +50,21 @@ const Gameboard = () => {
     });
   };
   const genaratePosition = (cordX, CordY) => cordX * boardRow + CordY;
+  const receiveAttack = (x, y) => {
+    const attackedPosition = genaratePosition(x, y);
+    if (hasShip(attackedPosition)) {
+      const attackhableShip = board[attackedPosition].currentShip;
+      const attackhableShipCell = board[attackedPosition].shipPositionIndex;
+      if (board[attackedPosition].targetHit === false) {
+        attackhableShip.hit(attackhableShipCell);
+        board[attackedPosition].targetHit = true;
+        return true;
+      }
+    }
+    board[attackedPosition] = 'X';
+    return false;
+  };
+
   return {
     boardRow,
     board,
@@ -57,6 +72,8 @@ const Gameboard = () => {
     positionFactor,
     containsHorizontalEdge,
     containsVerticalEdge,
+    receiveAttack,
+    AllShipsHaveSunk,
   };
 };
 module.exports = Gameboard;
