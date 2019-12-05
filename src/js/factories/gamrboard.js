@@ -64,7 +64,7 @@ const Gameboard = () => {
     board[attackedPosition] = 'X';
     return false;
   };
-
+  const AllShipsHaveSunk = () => shipContainer.every((eachShip) => eachShip.isSunk());
   return {
     boardRow,
     board,
