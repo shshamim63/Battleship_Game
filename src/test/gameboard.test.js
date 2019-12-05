@@ -18,7 +18,7 @@ describe('Gameboard', () => {
     expect(gameboard.containsVerticalEdge(29 + gameboard.positionFactor(1, true))).toBe(false);
   });
   test('places ship on the gameboard', () => {
-    gameboard.placeShips([2]);
-    expect(gameboard.board.filter((grid) => typeof grid === 'object').length).toBe(2);
+    gameboard.placeShips([4, 3, 2]);
+    expect(gameboard.board.filter((grid) => typeof grid === 'object').length).toBe(9);
   });
 });
