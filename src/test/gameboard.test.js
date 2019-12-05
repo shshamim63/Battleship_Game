@@ -21,4 +21,9 @@ describe('Gameboard', () => {
     gameboard.placeShips([4, 3, 2]);
     expect(gameboard.board.filter((grid) => typeof grid === 'object').length).toBe(9);
   });
+  test('receives cordinate and mark place as hit', () => {
+    expect(gameboard.board[5]).toBe('O');
+    gameboard.receiveAttack(0, 5);
+    expect(gameboard.board[5]).toBe('X');
+  });
 });

@@ -49,6 +49,7 @@ const Gameboard = () => {
       shipPlacement(randomPosition, element, isVertical);
     });
   };
+  const genaratePosition = (cordX, CordY) => cordX * boardRow + CordY;
   return {
     boardRow,
     board,
