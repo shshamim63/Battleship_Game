@@ -13,4 +13,7 @@ describe('Player', () => {
   test('attack method return true if cordinate is valid', () => {
     expect(player.attack(gameboard, 0, 0)).toBe(true);
   });
+  test('Computer generates attack successfully', () => {
+    expect(player.computerAttack(gameboard)).toBe(true);
+  });
 });
