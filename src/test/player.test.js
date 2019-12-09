@@ -1,4 +1,4 @@
-const Player = require('../js/factories/player');
+import Player from '../js/factories/player';
 
 describe('Player', () => {
   let player;

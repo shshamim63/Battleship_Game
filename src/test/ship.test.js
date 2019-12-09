@@ -1,4 +1,4 @@
-const Ship = require('../js/factories/ship');
+import Ship from '../js/factories/ship';
 
 describe('Ship', () => {
   const ship = Ship(3);

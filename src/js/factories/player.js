@@ -32,4 +32,4 @@ const Player = () => {
     computerAttack,
   };
 };
-module.exports = Player;
+export default Player;

@@ -12,4 +12,4 @@ const Ship = (len) => {
     isSunk,
   };
 };
-module.exports = Ship;
+export default Ship;
