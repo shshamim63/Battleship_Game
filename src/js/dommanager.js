@@ -10,6 +10,8 @@ const renderBoard = (board, rowSize, boardId) => {
     for (let j = 0; j < rowSize; j += 1) {
       const boardPartContainer = document.createElement('div');
       boardPartContainer.classList.add('col', 'box');
+      const boardIndex = (i * rowSize) + j;
+      boardPartContainer.dataset.id = boardIndex;
       boardRowContainer.appendChild(boardPartContainer);
     }
     currentBoard.appendChild(boardRowContainer);

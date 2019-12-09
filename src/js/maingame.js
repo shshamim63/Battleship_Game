@@ -8,6 +8,7 @@ const game = (player, computer, playerBoard, computerBoard) => {
     renderBoard(playerBoard.board, playerBoard.boardRow, 0);
     renderBoard(computerBoard.board, playerBoard.boardRow, 1);
   };
+
   return { gameStart };
 };
 export default game;

@@ -27,6 +27,34 @@ header {
   transform: scale(1.04);
   cursor: pointer;
 }
+.hit {
+  background: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 1.5px),
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 1.5px),
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 1.5px),
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 1.5px),
+      rgba(0, 0, 0, 0) 100%
+    );
+  background-origin: border-box;
+}
+
+.ship {
+  background-color: rgba(162, 187, 233, 0.4);
+}
+
+.sunk {
+  background-color: rgba(255, 0, 0, 0.75);
+  border-color: rgb(165, 4, 4);
+}
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
