@@ -40,7 +40,7 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 
 ## Maintainers
 
-[@Shakhawat Hossain](https://github.com/Shakhawat Hossain)
+[Shakhawat Hossain](https://github.com/shshamim63)
 
 ## Contributing
 
