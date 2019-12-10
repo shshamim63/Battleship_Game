@@ -2,6 +2,7 @@ import Player from './factories/player.js';
 import Gameboard from './factories/gamrboard.js';
 import { reloader } from './dommanager.js';
 import Game from './maingame.js';
+import '../style/main.scss';
 
 const player = Player();
 const computer = Player();
