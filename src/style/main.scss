@@ -1,0 +1,83 @@
+@import '~bootstrap/scss/bootstrap';
+body { 
+  background: url(../style/images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.header-size {
+  font-size: 3.5rem;
+}
+
+.box {
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  padding: 7px;
+  height: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.message {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: darkmagenta;
+}
+.hit {
+  background: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 1.5px),
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 1.5px),
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 1.5px),
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 1.5px),
+      rgba(0, 0, 0, 0) 100%
+    );
+  background-origin: border-box;
+}
+
+.ship {
+  background-color: azure;
+}
+.x-marker {
+  background-color: rgba(162, 187, 233, 0.4);
+}
+.sunk {
+  background-color: rgba(255, 0, 0, 0.75);
+  border-color: rgb(165, 4, 4);
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .header-size {
+    font-size: 2.5rem;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .header-size {
+    font-size: 2.5rem;
+  }
+  .grid-gap {
+    height: 5rem;
+    background-color: aqua;
+  }
+}
