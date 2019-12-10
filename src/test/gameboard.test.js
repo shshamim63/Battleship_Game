@@ -2,6 +2,7 @@ import Gameboard from '../js/factories/gamrboard';
 
 describe('Gameboard', () => {
   const gameboard = Gameboard();
+  const gameboard1 = Gameboard();
   test('has each row size', () => {
     expect(gameboard.boardRow).toBe(10);
   });
@@ -22,9 +23,9 @@ describe('Gameboard', () => {
     expect(gameboard.board.filter((grid) => typeof grid === 'object').length).toBe(9);
   });
   test('receives cordinate and mark place as hit', () => {
-    expect(gameboard.board[5]).toBe('O');
-    gameboard.receiveAttack(0, 5);
-    expect(gameboard.board[5]).toBe('X');
+    expect(gameboard1.board[5]).toBe('O');
+    gameboard1.receiveAttack(0, 5);
+    expect(gameboard1.board[5]).toBe('X');
   });
   test('checks if  all of their ships have been sunk', () => {
     gameboard.placeShips([4, 3, 2]);

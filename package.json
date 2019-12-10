@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shshamim63/Battleship_Game#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
