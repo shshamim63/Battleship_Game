@@ -27,12 +27,22 @@ header {
   cursor: pointer;
 }
 
+.message {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: darkmagenta;
+}
+
 .hit {
   background: linear-gradient(to top left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 1.5px), black 50%, rgba(0, 0, 0, 0) calc(50% + 1.5px), rgba(0, 0, 0, 0) 100%), linear-gradient(to top right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 1.5px), black 50%, rgba(0, 0, 0, 0) calc(50% + 1.5px), rgba(0, 0, 0, 0) 100%);
   background-origin: border-box;
 }
 
 .ship {
+  background-color: azure;
+}
+
+.x-marker {
   background-color: rgba(162, 187, 233, 0.4);
 }
 
@@ -52,6 +62,10 @@ header {
 @media screen and (max-width: 600px) {
   .header-size {
     font-size: 2.5rem;
+  }
+  .grid-gap {
+    height: 5rem;
+    background-color: aqua;
   }
 }
 /*# sourceMappingURL=main.css.map */

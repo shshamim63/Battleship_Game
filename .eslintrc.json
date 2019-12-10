@@ -19,6 +19,10 @@
         "no-unused-vars": "off",
         "eol-last": "off",
         "no-restricted-globals": "off",
-        "no-use-before-define": "off"
+        "no-use-before-define": "off",
+        "no-const-assign": "off",
+        "import/extensions": "off",
+        "import/no-cycle": "off",
+        "import/prefer-default-export": "off"
     }
 }
