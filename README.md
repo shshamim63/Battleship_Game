@@ -27,7 +27,9 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 
 
 1. Run `npm install` on the terminal. It will install all the dependencies required for this project.
+## Deployment
 
+### ✨ [Live Demo](https://readytobattle.netlify.com/)
 
 ## Usage
 
@@ -40,11 +42,19 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 
 ## Maintainers
 
-[Shakhawat Hossain](https://github.com/shshamim63)
+👤 **Shakhawat Hossain**
+
+- Github: [@shshamim63](https://github.com/shshamim63)
+- LinkedIn: [@shakhawathossainshamim](https://www.linkedin.com/in/shakhawathossainshamim/)
+- Twitter: [@Shshamim090](https://twitter.com/Shshamim090)
 
 ## Contributing
-
-PRs accepted.
+🤝 PRs accepted. 
+1. Fork it (https://github.com/shshamim63/Battleship_Game)
+2. Create your feature branch (git checkout -b feature/[choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add')
+4. Push to the branch (git push origin feature/[chosen-name])
+5. Create a new Pull Request
 
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
