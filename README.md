@@ -17,27 +17,26 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 - [License](#license)
 
 ## Background
-```
+
 1. JavaScript
 2. HTML CSS
 3. Bootstrap
 4. Jest
-```
+
 ## Install
 
-```
-1. 1. Run `npm install` It will install all the dependencies required by the project.
-```
+
+1. Run `npm install` on the terminal. It will install all the dependencies required for this project.
+
 
 ## Usage
 
-```
 1. Clone the repository: `git@github.com:shshamim63/Battleship_Game.git`
-2. Enter into the folder: `cd Battleship_Game`
+2. Enter into the directory: `cd Battleship_Game`
 3. Run `npm start` to start the development server. It will automatically open the page in your default browser.
-4. Run `npm run build` to get a deployable version.
-5. Run `npm run test` to execute the test cases.
-```
+4. Run `npm run build`, which creates a build directory with a production build of this game.
+5. Run `npm run test` to execute the test scripts.
+
 
 ## Maintainers
 
