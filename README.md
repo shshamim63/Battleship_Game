@@ -1,6 +1,7 @@
 # Battleship
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![battleship](./battleship.png)
 
 > This project is creted to brush up the core concepts of Callbacks, Object Oriented Programming, Factory Functions, Module Pattern, Single Responsibility, Tightly Coupled Objects and Test Driven Development using jest framework.
 
