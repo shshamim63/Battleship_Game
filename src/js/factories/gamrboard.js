@@ -26,6 +26,20 @@ const Gameboard = () => {
     }
     return !(defineRow(start) === defineRow(current));
   };
+  const neighbourHasShip = (position) => {
+    if (hasShip(position + 1)
+    || hasShip(position - 1)
+    || hasShip(position - boardRow)
+    || hasShip(position + boardRow)
+    || hasShip(position + boardRow + 1)
+    || hasShip(position + boardRow - 1)
+    || hasShip(position - boardRow + 1)
+    || hasShip(position - boardRow - 1)
+    ) {
+      return true;
+    }
+    return false;
+  };
   const containsVerticalEdge = (position) => board[position] === undefined;
   const positionIsvalid = (randomPosition, len, isVertical) => {
     for (let i = 0; i < len; i += 1) {
@@ -33,6 +47,7 @@ const Gameboard = () => {
       || containsHorizontalEdge(randomPosition,
         randomPosition + positionFactor(isVertical, i), isVertical)
       || containsVerticalEdge(randomPosition + positionFactor(isVertical, i))
+      || neighbourHasShip(randomPosition + positionFactor(isVertical, i))
       ) {
         return false;
       }
