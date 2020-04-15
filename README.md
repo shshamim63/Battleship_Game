@@ -13,6 +13,7 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 - [Install](#install)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
+- [Potential Future Feature](#potential-future-feature)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -47,6 +48,15 @@ TODO: Battleship (also Battleships or Sea Battle1) is a strategy type guessing g
 - Github: [@shshamim63](https://github.com/shshamim63)
 - LinkedIn: [@shakhawathossainshamim](https://www.linkedin.com/in/shakhawathossainshamim/)
 - Twitter: [@Shshamim090](https://twitter.com/Shshamim090)
+
+## Potential Future Feature
+
+- Improve ships appearence and animation when hit/miss
+- Introduce different levels<br>
+    - Easy
+    - Medium
+    - Hard
+- Adds more functionality to ships while user places ships.
 
 ## Contributing
 🤝 PRs accepted. 
